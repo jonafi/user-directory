@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "name": "Steve Rogers",
+        "alterego": "Captain America",
+        "pic": "captainamerica.jpg",
+        "alive":true
+    },
+    {
+        "id": 2,
+        "name": "Bucky Barnes",
+        "alterego": "Winter Soldier",
+        "pic": "wintersoldier.jpg",
+        "alive":true
+    },
+    {
+        "id": 3,
+        "name": "Tony Stark",
+        "alterego": "Iron Man",
+        "pic": "ironman.jpg",
+        "alive":false
+    },
+    {
+        "id": 4,
+        "name": "Sam Wilson",
+        "alterego": "Falcon",
+        "pic": "falcon.jpg",
+        "alive":true
+    },
+    {
+        "id": 5,
+        "name": "Natasha Romanoff",
+        "alterego": "Black Widow",
+        "pic": "blackwidow.jpg",
+        "alive":false
+    },
+    {
+        "id": 6,
+        "name": "Bruce Banner",
+        "alterego": "HULK",
+        "pic": "hulk.jpg",
+        "alive":true
+    },
+    {
+        "id": 7,
+        "name": "Thanos",
+        "alterego": "Thanos",
+        "pic": "thanos.jpg",
+        "alive":false
+    },
+    {
+        "id": 9,
+        "name": "Ultron",
+        "alterego": "Ultron",
+        "pic": "ultron.jpg",
+        "alive":false
+    },
+    {
+        "id": 10,
+        "name": "Peter Parker",
+        "alterego": "Spiderman",
+        "pic": "spiderman.jpg",
+        "alive":true
+    }
+
+
+]

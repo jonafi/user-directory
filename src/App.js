@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import EmployeeProfile from "./components/EmployeeProfile";
+import employees from "./employees.json";
+import NavBar from "./components/NavBar"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    employees
+  };
+
+  render() {
+    return (
+  <>
+  <NavBar/>
+        {this.state.employees.map(employee => (
+          <EmployeeProfile
+            id={employee.id}
+            name={employee.name}
+            alterego={employee.alterego}
+            goodguy={employee.goodguy}
+          />
+        ))}
+      </>
+    );
+  }
+
 }
 
 export default App;
