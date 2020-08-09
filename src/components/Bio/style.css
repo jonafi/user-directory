@@ -1,0 +1,18 @@
+.bio{
+    border:1px solid black;
+    width:50%;
+    height:200px;
+    float:right;
+}
+
+.bioPic{
+    width:100px;
+    height:100px;
+    border:1px solid red;
+}
+
+.quote{
+    font-style:italic;
+    
+}
+ /* .quote::before{content:"&ldquo;"} */

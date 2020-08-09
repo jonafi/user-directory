@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import EmployeeProfile from "./components/EmployeeProfile";
 import employees from "./employees.json";
-import NavBar from "./components/NavBar"
+import ActionBar from "./components/ActionBar"
+import Bio from "./components/Bio"
 
 class App extends Component {
   state = {
@@ -11,7 +12,8 @@ class App extends Component {
   render() {
     return (
   <>
-  <NavBar/>
+  <ActionBar/>
+  <Bio/>
         {this.state.employees.map(employee => (
           <EmployeeProfile
             id={employee.id}

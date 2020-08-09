@@ -4,63 +4,73 @@
         "name": "Steve Rogers",
         "alterego": "Captain America",
         "pic": "captainamerica.jpg",
-        "alive":true
+        "alive":true,
+        "quote":"I could do this all day"
     },
     {
         "id": 2,
         "name": "Bucky Barnes",
         "alterego": "Winter Soldier",
         "pic": "wintersoldier.jpg",
-        "alive":true
+        "alive":true,
+        "quote":"You're my mission"
     },
     {
         "id": 3,
         "name": "Tony Stark",
         "alterego": "Iron Man",
         "pic": "ironman.jpg",
-        "alive":false
+        "alive":false,
+        "quote":"I am Iron Man"
     },
     {
         "id": 4,
         "name": "Sam Wilson",
         "alterego": "Falcon",
         "pic": "falcon.jpg",
-        "alive":true
+        "alive":true,
+        "quote":"On your left"
     },
     {
         "id": 5,
         "name": "Natasha Romanoff",
         "alterego": "Black Widow",
         "pic": "blackwidow.jpg",
-        "alive":false
+        "alive":false,
+        "quote":"Let me put you on hold"
     },
     {
         "id": 6,
         "name": "Bruce Banner",
         "alterego": "HULK",
         "pic": "hulk.jpg",
-        "alive":true
+        "alive":true,
+        "quote":"HULK SMASH"
     },
     {
         "id": 7,
         "name": "Thanos",
         "alterego": "Thanos",
         "pic": "thanos.jpg",
-        "alive":false
+        "alive":false,
+        "quote":"The hardest choices require the strongeset wills"
+
     },
     {
         "id": 9,
         "name": "Ultron",
         "alterego": "Ultron",
         "pic": "ultron.jpg",
-        "alive":false
+        "alive":false,
+        "quote":"Peace in our time"
     },
     {
         "id": 10,
         "name": "Peter Parker",
         "alterego": "Spiderman",
         "pic": "spiderman.jpg",
-        "alive":true
+        "alive":true,
+        "quote":"It's not a onesie"
     }
 
 

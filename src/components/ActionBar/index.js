@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function NavBar(props) {
+function ActionBar(props) {
   return (
       <div>
     <h1>Marvel Directory</h1>
@@ -12,4 +12,4 @@ function NavBar(props) {
   );
 }
 
-export default NavBar;
+export default ActionBar;
