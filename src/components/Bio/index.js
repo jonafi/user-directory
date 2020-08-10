@@ -5,8 +5,7 @@ function Bio(props) {
     
   return (
       <div className="bio">
-          {/* <img src="based on prop" alt="PIC  BASED ON PROP PASSED IN" className="bioPic"/> */}
-
+          <img src={"pics/"+props.bio.pic} alt="PIC  BASED ON PROP PASSED IN" className="bioPic"/>
 <p className="quote">
     &ldquo;
 {props.bio.quote}

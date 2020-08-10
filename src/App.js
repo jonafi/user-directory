@@ -17,7 +17,7 @@ const App = () => {
     id: 1,
     name: "Steve Rogers",
     alterego: "Captain America",
-    pic: "",
+    pic: "captainamerica.jpg",
     alive: true,
     quote: "Meow"
   });
