@@ -16,7 +16,7 @@ function EmployeeProfile(props) {
         </ul>
   
       </div>
-  <p className="more"><a href="#">More &rarr; </a></p>
+  <p className="more" onClick={()=>props.displayBio(props.id)}><a href="#">More &rarr; </a></p>
     </div>
   );
 }

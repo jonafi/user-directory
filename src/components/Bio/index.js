@@ -4,11 +4,11 @@ import "./style.css";
 function Bio(props) {
   return (
       <div className="bio">
-          <img src="based on prop" alt="PIC  BASED ON PROP PASSED IN" className="bioPic"/>
+          {/* <img src="based on prop" alt="PIC  BASED ON PROP PASSED IN" className="bioPic"/> */}
 
 <p className="quote">
     &ldquo;
-Quote based on prop
+{props.bio.quote}
     &rdquo;
 </p>
     </div>
