@@ -1,13 +1,15 @@
 import React from "react";
+import "./style.css"
 
 
 const ActionBar = (props) => {
   return (
-      <div>
-    <h1>Marvel Directory</h1>
-    <button onClick={()=>props.handleNameClick()}>Sort by name</button>
-    <button onClick={()=>props.handleAlterEgoClick()}>Sort by Alter Ego </button>
-    <button onClick={()=>props.deadFilter()}>I see dead people</button>
+      <div className="action">
+    <h1 className="title">Marvel Directory</h1>
+    <button className="btn btn-primary" onClick={()=>props.handleNameClick()}>Sort by name</button> 
+    <button className="btn btn-primary" onClick={()=>props.handleAlterEgoClick()}>Sort by alter ego </button> 
+    <button className="btn btn-danger" onClick={()=>props.deadFilter()}>Show only dead users</button>
+    <button className="btn btn-success" onClick={()=>props.liveFilter()}>Show only live users</button>
     </div>
   );
 }

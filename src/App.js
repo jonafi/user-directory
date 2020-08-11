@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import EmployeeProfile from "./components/EmployeeProfile";
+import User from "./components/Users";
 import employees from "./employees.json";
 import ActionBar from "./components/ActionBar"
 import Bio from "./components/Bio"
@@ -24,6 +24,11 @@ const App = () => {
 
   const filterDead = () => {
     const filteredEmployees = [...employees].filter(employee => employee.alive !== true);
+    setEmployees(filteredEmployees);
+  }
+
+  const filterLive = () => {
+    const filteredEmployees = [...employees].filter(employee => employee.alive ===true);
     setEmployees(filteredEmployees);
   }
 
@@ -78,10 +83,11 @@ const App = () => {
         handleNameClick={sortByName}
         handleAlterEgoClick={sortByAlterEgo}
         deadFilter={filterDead}
+        liveFilter={filterLive}
       />
       <Bio bio={bio} />
       {employees.map(employee => (
-        <EmployeeProfile
+        <User
           key={employee.id}
           id={employee.id}
           name={employee.name}

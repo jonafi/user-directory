@@ -1,0 +1,12 @@
+.action{
+   /* border:1px solid green; */
+}
+
+.title{
+    text-align: center;
+    font-family: fantasy;
+}
+
+button{
+    margin:10px;
+}
