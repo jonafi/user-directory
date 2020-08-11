@@ -4,21 +4,15 @@ import users from "./users.json";
 import ActionBar from "./components/ActionBar"
 import Bio from "./components/Bio"
 
-//TODO  Dry sortbyname and sortby alterego
+//TODO  DRY sortbyname and sortby alterego
 //TODO  reset user list after filter 
-//TODO  refactor/document code , address name inconsitencies 
-//TODO  style changes: move bio window to be inside card
-
+//TODO  refactor/document code 
 
 const userData = users;
-
-
 
 const App = () => {
   const [users, setUsers] = useState(userData);
   const [bio, setBio] = useState({});
-
- 
 
   const filterDead = () => {
     setUsers(userData);  //why doesn't this reset the filter ?
@@ -32,9 +26,7 @@ const App = () => {
     setUsers(filteredUsers);
   }
 
-
   const sortByAlterEgo = () => {
- 
     //Thank you MDN:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
     const sortedUsers = [...users].sort(function (a, b) {
       let nameA = a.alterego;
@@ -48,14 +40,10 @@ const App = () => {
       // names must be equal
       return 0;
     });
-
     setUsers(sortedUsers);
   }
 
-
-
   const sortByName = () => {
-
     //Thank you MDN:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
     const sortedUsers = [...users].sort(function (a, b) {
       let nameA = a.name;

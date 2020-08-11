@@ -7,9 +7,9 @@ function Bio(props) {
       <div  className="bio">
           <img src={"pics/"+props.bio.pic} alt="Profile" className="bioPic"/>
 <p className="quote">
-
+&ldquo;
 {props.bio.quote}
-
+&rdquo;
 </p>
     </div>
   );
