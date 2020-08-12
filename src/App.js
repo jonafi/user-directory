@@ -1,34 +1,51 @@
 import React, { useState } from "react";
+//import { useEffect } from "react";
 import User from "./components/Users";
 import users from "./users.json";
 import ActionBar from "./components/ActionBar"
 import Bio from "./components/Bio"
 
-//TODO  DRY sortbyname and sortby alterego
-//TODO  reset user list after filter 
-//TODO  refactor/document code 
+//TODO  DRY sort functions and filter functions
 
-const userData = users;
+const userData = users;  // maintain a "fresh copy" of the original list
 
 const App = () => {
+
   const [users, setUsers] = useState(userData);
   const [bio, setBio] = useState({});
+   
+//======= Unused useEffect code, helped debug.  Thank you Daniel! ==//
+//  const [clickedCheck, setClickedCheck] = useState(false);
+//   useEffect( ()=>{
+//     console.log("useEffect triggered");
+//     setUsers(userData);
+//      },[clickedCheck]
+//   )
+//  const clickChecker = ()=>{
+//   console.log(clickedCheck)
+//   if(clickedCheck){
+//     setClickedCheck(false)
+//   }
+//   else{
+//     setClickedCheck(true)
+//   }
+//   return clickedCheck;
+//  }
+
 
   const filterDead = () => {
-    setUsers(userData);  //why doesn't this reset the filter ?
-    const filteredUsers = [...users].filter(user => user.alive !== true);
+    const filteredUsers = [...userData].filter(user => user.alive !== true);
     setUsers(filteredUsers);
   }
 
   const filterLive = () => {
-    setUsers(userData);  //why doesn't this reset the filter ?
-    const filteredUsers = [...users].filter(user => user.alive === true);
+    const filteredUsers = [...userData].filter(user => user.alive === true);
     setUsers(filteredUsers);
   }
 
   const sortByAlterEgo = () => {
     //Thank you MDN:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-    const sortedUsers = [...users].sort(function (a, b) {
+    const sortedUsers = [...userData].sort(function (a, b) {
       let nameA = a.alterego;
       let nameB = b.alterego;
       if (nameA < nameB) {
@@ -45,7 +62,7 @@ const App = () => {
 
   const sortByName = () => {
     //Thank you MDN:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-    const sortedUsers = [...users].sort(function (a, b) {
+    const sortedUsers = [...userData].sort(function (a, b) {
       let nameA = a.name;
       let nameB = b.name;
       if (nameA < nameB) {
@@ -63,7 +80,6 @@ const App = () => {
 
   const displayBio = (id) => {
     const selectedBio = users.filter(user => user.id === id);
-    //console.log(selectedBio);
     setBio(selectedBio[0]);
   }
 
