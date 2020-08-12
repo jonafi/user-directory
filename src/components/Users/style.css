@@ -12,6 +12,12 @@
  padding:2px;
 }
 
+.cell{
+  display:inline-block;
+  /* border:1px solid red; */
+  width:50%;
+}
+
 .biolink{
   font-size: small;
   text-align: right;
