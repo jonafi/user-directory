@@ -1,14 +1,19 @@
 .action{
     border-bottom:1px solid #cccccc80;
-    background-color: #333;
+    background:#e7c9a9;
+    text-align: center;
+    border-radius: 12px;
+    margin:8px;
+    padding:3px;
 }
 
 .title{
     text-align: center;
     font-family: fantasy;
-    color:cyan;
+    color:#222;
 }
 
 button{
     margin:10px;
+    min-width:20%;
 }

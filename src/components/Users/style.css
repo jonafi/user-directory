@@ -1,23 +1,28 @@
 .card {
   background:#e7c9a9;
-  border-radius: 2px;
+  border-radius: 12px;
   margin: 8px;
+  padding:2px 12px 2px 12px;
   position: relative;
-  width: 50%;
+  width: 45%;
   text-align: left;
 }
 
 .card > .content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 15px;
+ padding:2px;
 }
 
-.more{
+.biolink{
   font-size: small;
   text-align: right;
-  float: right;;
+  float: right;
   color:blue;
+  margin-bottom:0;
 }
 
-p.more:hover{color:lightblue;}
+p.biolink:hover{color:#0000ff88}
+
+body{
+  background:#222;
+
+}

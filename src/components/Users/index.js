@@ -5,8 +5,8 @@ function User(props) {
   return (
     <div className="card">
       <div className="content">
-        <strong>Name:</strong> {props.name} - <strong>Alter Ego:</strong> {props.alterego}
-        <p className="more" onClick={() => props.displayBio(props.id)}>More</p>
+        <strong>Name:</strong> {props.name} <br/><strong>Alter Ego:</strong> {props.alterego}
+        <p className="biolink" onClick={() => props.displayBio(props.id)}>Bio</p>
       
       </div>
    
